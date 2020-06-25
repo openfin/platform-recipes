@@ -1,0 +1,36 @@
+{
+  "name": "platform-recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eslint && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/openfin/platform-recipes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/openfin/platform-recipes/issues"
+  },
+  "homepage": "https://gitlab.com/openfin/platform-recipes#readme",
+  "dependencies": {
+    "hadouken-js-adapter": "^2.52.0",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}
