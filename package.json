@@ -1,12 +1,13 @@
 {
-  "name": "platform-recipes",
+  "name": "openfin-platform-recipes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/src/index.js",
   "scripts": {
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eslint && tsc"
+    "build": "npm run lint && tsc",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
