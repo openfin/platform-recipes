@@ -13,14 +13,15 @@ export default function composeMixins(...args: PlatformMixin[]) {
     };
 }
 
-const externalWindowsToTrack = [
-    {
-        name: 'Notepad',
-        title: 'my_platform_notes - Notepad'
-    }
-];
-fin.Platform.init({
-    overrideCallback: composeMixins(Foo, createExternalWindowMixin(externalWindowsToTrack))
-});
+// example
+// const externalWindowsToTrack = [
+//     {
+//         name: 'Notepad',
+//         title: 'my_platform_notes - Notepad'
+//     }
+// ];
+// fin.Platform.init({
+//     overrideCallback: composeMixins(Foo, createExternalWindowMixin(externalWindowsToTrack))
+// });
 
 export { Foo, createExternalWindowMixin };
