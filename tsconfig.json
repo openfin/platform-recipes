@@ -2,13 +2,18 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "build",
-    "target": "ES2019",
+    "target": "ES6",
     "skipLibCheck": true,
-    "declaration": true
+    "declaration": true,
+    "allowJs": true
   },
   "include": [
     "./node_modules/hadouken-js-adapter/fin.d.ts",
     "src/**/*.ts",
-    "test/**/*.ts"
+    "example/**/*.ts",
+    "example/**/*.js",
+    "test/**/*.ts",
+    "example/frame/js/color-view.js",
+    "example/frame/js/left-menu.ks",
   ]
 }

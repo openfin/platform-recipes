@@ -3,7 +3,7 @@ import { PlatformProvider } from '../../node_modules/hadouken-js-adapter/src/sha
 import { Constructor } from '../../node_modules/hadouken-js-adapter/src/shapes/Constructor';
 
 interface Foo extends PlatformProvider {
-    foo: 'foo';
+    foo: () => number;
 }
 
 /**
@@ -12,11 +12,15 @@ interface Foo extends PlatformProvider {
  */
 export default function FooMixin(Base: PlatformConstructor): Constructor<Foo> {
     return class Foo extends Base {
-        public foo: 'foo';
+        #foo: number;
 
         constructor() {
             super();
-            this.foo = 'foo';
+            this.#foo = Date.now();
+        }
+
+        public foo() {
+            return this.#foo;
         }
     };
 }
